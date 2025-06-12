@@ -54,12 +54,13 @@ SiteBoss_API_v2.ps1 <host> <username> <password>
 ## Security
 
 - The script disables SSL certificate validation to support self-signed certs; use with caution.
-- Credentials are passed as arguments (plain text in PRTG), so restrict permissions on the script and sensor.
+- Credentials are passed as arguments (plain text in PRTG), so restrict permissions on the script and sensor or use the script placeholders.
 
 ## Customization
 
 - **Temperature limits** (warning/error) can be adjusted in the script under the "Temperature channel" section.
 - **Sensor lookup**: Custom lookup ID is `custom.prtgc.lookup.siteboss.rest.sensorstate`. Ensure your PRTG server has this lookup defined if using custom states.
+- **Device Template**: Included my device template, may not be what you want, but something you can edit to make work however you want.
 
 ## License
 
