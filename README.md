@@ -1,4 +1,4 @@
-# PRTG-SiteBoss-Sensor
+# PRTG-SiteBoss-Sensor-Script
 
 This repository provides a PowerShell script for integrating SiteBoss network device data with the PRTG Network Monitor system. The script queries the SiteBoss REST API, retrieves sensor data, and outputs results in an XML format readable by PRTG as a custom sensor.
 
