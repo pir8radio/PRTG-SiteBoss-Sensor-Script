@@ -413,7 +413,7 @@
           SiteBoss_API_v2.ps1
         </exefilelabel>
         <exeparams>
-          %host yourSBuser &quot;yourSBpass!&quot;
+          %host yourSBuser &quot;yourSBpass!&quot;   <!-- ADD YOUR SITEBOSS API USER AND PASS HERE -->
         </exeparams>
         <valuetype/>
         <mutexname/>
