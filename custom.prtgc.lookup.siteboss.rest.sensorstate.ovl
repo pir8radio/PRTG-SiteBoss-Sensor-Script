@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueLookup id="custom.prtgc.lookup.siteboss.rest.sensorstate" desiredValue="0" undefinedState="None" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+	<Lookups>
+		<SingleInt state="Ok" value="0">Info (0)</SingleInt>
+		<SingleInt state="Ok" value="1">Normal (1)</SingleInt>
+		<SingleInt state="Ok" value="2">Normal (2)</SingleInt>
+		<SingleInt state="Warning" value="3">Minor (3)</SingleInt>
+		<SingleInt state="Error" value="4">Major (4)</SingleInt>
+		<SingleInt state="Error" value="5">Critical (5)</SingleInt>
+		<SingleInt state="Ok" value="6">Active (6)</SingleInt>
+		<SingleInt state="Ok" value="7">Inactive (7)</SingleInt>
+		<SingleInt state="None" value="8">Uninitialized</SingleInt>
+	</Lookups>
+</ValueLookup>
