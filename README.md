@@ -35,7 +35,7 @@ SiteBoss_API_v2.ps1 <host> <username> <password>
 ### Example (manual test)
 
 ```powershell
-.\SiteBoss_API_v2.ps1 192.168.1.100 admin MySecretPassword
+.\SiteBoss_API_v2.ps1 192.168.1.100 admin "MySecretPassword"
 ```
 
 ### Integration with PRTG
