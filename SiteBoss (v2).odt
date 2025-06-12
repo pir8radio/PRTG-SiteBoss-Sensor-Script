@@ -413,7 +413,7 @@
           SiteBoss_API_v2.ps1
         </exefilelabel>
         <exeparams>
-          %host prtg_api &quot;Ipa_gtrp!&quot;
+          %host yourSBuser &quot;yourSBpass!&quot;
         </exeparams>
         <valuetype/>
         <mutexname/>
