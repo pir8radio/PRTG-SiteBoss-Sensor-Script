@@ -59,8 +59,8 @@ SiteBoss_API_v2.ps1 <host> <username> <password>
 ## Customization
 
 - **Temperature limits** (warning/error) can be adjusted in the script under the "Temperature channel" section.
-- **Sensor lookup**: Custom lookup ID is `custom.prtgc.lookup.siteboss.rest.sensorstate`. Ensure your PRTG server has this lookup defined if using custom states.
-- **Device Template**: Included my device template, may not be what you want, but something you can edit to make work however you want.
+- **Sensor lookup**: Custom lookup ID is `custom.prtgc.lookup.siteboss.rest.sensorstate.ovl`. Ensure your PRTG server has this lookup defined if using custom states.
+- **Device Template**: Included my device template `SiteBoss (v2).odt`, may not be what you want, but something you can edit to make work however you want.
 
 ## License
 
