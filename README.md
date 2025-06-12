@@ -41,9 +41,11 @@ SiteBoss_API_v2.ps1 <host> <username> <password>
 ### Integration with PRTG
 
 1. Copy `SiteBoss_API_v2.ps1` to the `Custom Sensors\EXEXML` directory on your PRTG Probe system.
-2. In the PRTG web interface, add a new "EXE/Script Advanced" sensor to your SiteBoss device.
-3. Select `SiteBoss_API_v2.ps1` as the script, and add the required parameters (`%host <username> "<password>"`) in the sensor settings.
-4. Save and test the sensor.
+2. Copy `custom.prtgc.lookup.siteboss.rest.sensorstate.ovl` to the `lookups/custom` directory on your PRTG core(s).
+3. Copy `SiteBoss (v2).odt` to the `devicetemplates` directory on your PRTG core(s).
+4. In the PRTG web interface, add a new "EXE/Script Advanced" sensor to your SiteBoss device.
+5. Select `SiteBoss_API_v2.ps1` as the script, and add the required parameters (`%host <username> "<password>"`) in the sensor settings and select "Auto discovery with template" and select the `SiteBoss (v2)` template.
+6. Save and test the sensor.
 
 ## Output
 
