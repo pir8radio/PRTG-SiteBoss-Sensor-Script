@@ -66,7 +66,7 @@ SiteBoss_API_v2.ps1 <host> <username> <password>
 
 ## License
 
-[MIT](LICENSE) (or specify your preferred license)
+[MIT](LICENSE) 
 
 ## Disclaimer
 
