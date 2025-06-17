@@ -162,7 +162,7 @@ try {
             $result.AppendChild($lookup) | Out-Null
         }
 
-        if ($sensor.name -in @("Temperature", "Temp")) {
+        if ($sensor.name -like "Temperature*" -or $sensor.name -like "Temp*") {
             $limitmode = $xml.CreateElement("limitmode")
             $limitmode.InnerText = "1"
             $result.AppendChild($limitmode) | Out-Null
