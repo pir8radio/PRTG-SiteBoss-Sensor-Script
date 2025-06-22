@@ -38,7 +38,7 @@ $pass = $args[2]
 $loginUri = "https://$hostAddr/api/v1/auth"
 $body = @{ username = $user; password = $pass }
 try {
-    $loginResp = Invoke-WebRequest -Uri $loginUri -Method POST -Body ($body | ConvertTo-Json -Compress) -ContentType "application/json" -UseBasicParsing -TimeoutSec 20
+    $loginResp = Invoke-WebRequest -Uri $loginUri -Method POST -Body ($body | ConvertTo-Json -Compress) -ContentType "application/json" -UseBasicParsing -TimeoutSec 60
     $setCookie = $loginResp.Headers["Set-Cookie"]
     if (-not $setCookie) {
         Write-PRTG-Error "No Set-Cookie header received during authentication."
@@ -57,7 +57,7 @@ try {
     $nameUri = "https://$hostAddr/api/v1/settingkey/sys.sitename"
     $nameRequest = [System.Net.WebRequest]::Create($nameUri)
     $nameRequest.Method = "GET"
-    $nameRequest.Timeout = 20000
+    $nameRequest.Timeout = 60000
     $nameRequest.Headers.Add("Cookie", $cookieHeader)
     $nameResponse = $nameRequest.GetResponse()
     $nameReader = New-Object System.IO.StreamReader($nameResponse.GetResponseStream())
@@ -74,7 +74,7 @@ try {
     $modelUri = "https://$hostAddr/api/v1/settingkey/sys.product"
     $modelRequest = [System.Net.WebRequest]::Create($modelUri)
     $modelRequest.Method = "GET"
-    $modelRequest.Timeout = 20000
+    $modelRequest.Timeout = 60000
     $modelRequest.Headers.Add("Cookie", $cookieHeader)
     $modelResponse = $modelRequest.GetResponse()
     $modelReader = New-Object System.IO.StreamReader($modelResponse.GetResponseStream())
@@ -90,7 +90,7 @@ try {
     $dashboardUri = "https://$hostAddr/api/v1/sensor/dashboard"
     $request = [System.Net.WebRequest]::Create($dashboardUri)
     $request.Method = "GET"
-    $request.Timeout = 20000
+    $request.Timeout = 60000
     $request.Headers.Add("Cookie", $cookieHeader)
     $response = $request.GetResponse()
     $reader = New-Object System.IO.StreamReader($response.GetResponseStream())
